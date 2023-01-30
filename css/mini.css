@@ -1,0 +1,29 @@
+#menunav ul {
+    display: flex;
+}
+
+input[type="number"] {
+    display: block;
+}
+
+#menunav a {
+    padding: 0.2em;
+}
+
+.maincanvs {
+    flex-direction: column;
+}
+
+#imgclickcont {
+    flex-direction: row;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+
+.clickImg {
+    margin: 1em;
+    margin-left: 0;
+    width: auto;
+    height: 150px;
+}

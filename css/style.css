@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.center-text {
+    text-align: center;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.cimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+#imageCanvas {
+    cursor: crosshair;
+}
+
+input[type="file"], input[type="button"], input[type="radio"] {
+    cursor: pointer;
+}
+
+.maincanvs {
+    display: flex;
+}
+
+#imgclickcont {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.clickImg {
+    margin: 1em;
+    margin-left: 0;
+    width: 170px;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    margin: auto;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1024px;
+}
+
+.nascosto {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+#mis {
+    padding: 1em;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 2px black;
+}
+
+.canvs {
+    overflow: scroll;
+    width: 100%;
+}
+
+header {
+    margin: 2em 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    text-align: center;
+    margin: 0.4em;
+}
+
+p, h3 {    
+    margin: 0.6em;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 1.5em;
+}
+
+fieldset>div {
+    margin: auto;
+    width: fit-content;
+}
+
+fieldset input {
+    margin: 0.5em;
+}
+
+#update {
+    padding: 0.4em;
+}
+
+footer {
+    margin: 2em;
+}
+
+footer>p {
+    text-align: center;
+}
+
+#menunav {
+    height: 3em;
+    overflow: hidden; 
+    background: #333;
+}
+
+#menunav ul {
+    padding: 0.8em 0em;
+    list-style-type: none;
+}
+
+#menunav li {
+    display: inline;
+    margin: auto;
+}
+
+#menunav a {
+    transition-duration: 0.1s;
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+    background: #333;
+    font-size: 1.2em
+}
+
+#msg {
+    color: #600;
+}
+
+footer a {
+    color:#333
+}
+
+#sample {
+    display: flex;
+    justify-content: center;
+}
+
+#sample img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+#menunav a.sel {
+    background: #ddd;
+    color: #000;
+}
+
+#sample div {
+    width: 30%;
+}
+
+#sample a {
+    padding-top: 0.2em;
+    color: #333;
+    margin: 0;
+    display: block;
+    text-align: center;
+}

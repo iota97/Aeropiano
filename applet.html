@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Applicativo | Aero-piano</title>
+    <meta name="keywords" content="geometria, proiettiva, birapporto">
+    <meta name="description" content="Riproietta un'immagine correggendo la proiettiva">
+    <meta name="author" content="Giovanni Cocco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media ="screen and (max-width:600px), only screen and (max-width:600px)" href="css/mini.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aero-piano</h1>
+        <nav id="menunav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manuale.html">Manuale</a></li>
+                <li><a href="teoria.html">Teoria</a></li>
+                <li><a href="applet.html" class="sel">Applicativo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cont">
+        <div class="canvs maincanvs">
+            <canvas id="imageCanvas" width="800" height="600"></canvas>
+            <div id="imgclickcont">
+                <img class="clickImg" src="img/test1.jpg" alt="">
+                <img class="clickImg" src="img/test2.jpg" alt="">
+                <img class="clickImg" src="img/test3.jpg" alt="">
+                <img class="clickImg" src="img/test4.jpg" alt="">
+                <img class="clickImg" src="img/test5.jpg" alt="">
+                <img class="clickImg" src="img/test6.jpg" alt="">
+                <img class="clickImg" src="img/test7.jpg" alt="">
+                <img class="clickImg" src="img/test8.jpg" alt="">
+                <img class="clickImg" src="img/test9.jpg" alt="">
+            </div>
+        </div>
+        <fieldset>
+            <div>
+                <label for="imageLoader">Carica immagine: </label><input type="file" id="imageLoader" name="imageLoader">
+            </div>
+            <div>
+                <span>Punti di riferimento: </span>
+                <input type="radio" id="A" name="corner" checked><label for="A">A</label>
+                <input type="radio" id="B" name="corner"><label for="B">B</label>
+                <input type="radio" id="C" name="corner"><label for="C">C</label>
+                <input type="radio" id="D" name="corner"><label for="D">D</label>
+            </div>
+            <div>
+                <span>Punti di misura: </span>
+                <input type="radio" id="E" name="corner"><label for="E">E</label>
+                <input type="radio" id="F" name="corner"><label for="F">F</label>
+                <input type="radio" id="G" name="corner"><label for="G">G</label>
+            </div>
+            <div>
+                <label for="PosX">Posizione X:</label><input type="number" id="PosX">
+                <label for="PosY">Posizione Y:</label><input type="number" id="PosY">
+            </div>
+            <div>
+                <label for="resX">Lunghezza AB:</label><input value="32" type="number" id="resX">
+                <label for="resY">Lunghezza AD:</label><input value="32" type="number" id="resY">
+            </div>
+            <div id="mis">
+                <div>
+                    Distanza EF: <span id="dist">NA</span>
+                </div>
+                <div>
+                    Angolo EF-GF: <span id="ang">NA</span>
+                </div>
+            </div>
+            <div>
+                <label for="offX">Offset X:</label><input value="0" type="number" id="offX">
+                <label for="offY">Offset Y:</label><input value="0" type="number" id="offY">
+            </div>
+            <div>
+                <input type="button" id="update" value="Proietta immagine">
+            </div>
+            <div><p id="msg"></p></div>
+        </fieldset>
+        <div class="canvs">
+            <canvas id="outCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>Creato da <a href="mailto:giovanni.cocco3@studenti.unimi.it">Giovanni Cocco</a></p>
+    </footer>
+</body>
+</html>

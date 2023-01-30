@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Manuale | Aero-piano</title>
+    <meta name="keywords" content="geometria, proiettiva, birapporto">
+    <meta name="description" content="Riproietta un'immagine correggendo la proiettiva">
+    <meta name="author" content="Giovanni Cocco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media ="screen and (max-width:600px), only screen and (max-width:600px)" href="css/mini.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Aero-piano</h1>
+        <nav id="menunav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manuale.html" class="sel">Manuale</a></li>
+                <li><a href="teoria.html">Teoria</a></li>
+                <li><a href="applet.html">Applicativo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cont">
+        <h2>Manuale</h2>
+        <h3>Caricamento dell'immagine</h3>
+        <p>
+            Per prima cosa è necessario <strong>caricare la foto</strong> scattata all'interno dell'applicativo.
+            Per fare ciò servirsi della funzione <strong>Carica immagine</strong> per caricare un'immagine presente sul proprio computer
+            in formato JPEG o PNG.
+        </p>
+        <p>
+            In alternativa è possibile utilizzare delle <strong>immagini campione</strong> già presenti nell'applicativo
+            premendo su una di esse nella vista alla <strong>destra della canvas</strong>.
+        </p>
+        <h3>Punti di riferimento</h3>
+        <p>
+            Fatto questo selezionare i 4 vertici del <strong>rettangolo ABCD</strong>. I punti vanno indicati in <strong>senso orario</strong>.
+        </p>
+        <p>
+            È possibile indicare le coordinate di questi punti sia <strong>premendo sull'immagine</strong> sia specificandone
+            i valori attraverso i comandi <strong>Posizione X</strong> e <strong>Posizione Y</strong>. 
+            Posizione X fa riferimento alla posizione in orizzontale, mentre Posizione Y a quella verticale
+            dei punti rispetto al sistema di riferimento locale della canvas in cui l'angolo in alto a sinistra corrisponde al punto (0, 0)
+            mentre quello in basso a destra al punto (800, 600). 
+        </p>
+        <p>
+            I <strong>bottoni A, B, C, D</strong> permettono di specificare quale punto si sta indicando sia col mouse che tramite la posizione esplicita.
+            Ogni qualvolta si seleziona un valore per uno di questi punti <strong>premendo sull'immagine</strong>
+            la selezione passa automaticamente al punto <strong>successivo</strong>.
+        </p>
+        <p>
+            I comandi <strong>Lunghezza AB</strong> e <strong>Lunghezza AD</strong> permettono di specificare le <strong>lunghezze dei lati</strong> del rettangolo ABCD,
+            le lunghezze indicate dal applicativo quando verranno effettuate delle misure sono intese rispetto a queste ultime.
+        </p>
+        <p>
+            Naturalmente tali lunghezze devono essere inserite dall'utente in base alle sue supposizioni.
+            Più tali lunghezze saranno aderenti alla realtà e migliore sarà la fedeltà della ricostruzione.
+        </p>
+        <p>
+            <em>NOTA: i valori delle distanze citate in seguito saranno determinati in base alle lunghezze presunte dei due lati AB e AD.</em>
+        </p>
+        <h3>Punti di misura</h3>
+        <p>
+            Una volta scelti i punti di riferimento è possibile in modo del tutto analogo (facoltativamente) scegliere i <strong>punti di misura E, F e G</strong>.
+            L'unica differenza è che in questo caso premere sull'immagine non cambierà il punto selezionato.
+        </p>
+        <p>
+            Il valore della distanza tra E ed F viene visualizzato come <strong>Distanza EF</strong>.
+            Mentre l'angolo tra i vettori (E-F) e (G-F) viene visualizzato come <strong>Angolo EF-GF</strong>.
+        </p>
+        <h3>Riproiezione immagine</h3>
+        <p>
+            È possibile riproiettare <strong>ogni pixel</strong> dell'immagine originale tramite il comando <strong>Proietta immagine</strong>.
+        </p>
+        <p>
+            Nella riproiezione le <strong>Lunghezze AB e AD</strong> sono misurate in <strong>pixel</strong>, ovvero se la lunghezza AB ha un valore
+            di 32 il segmento AB riproiettato sarà lungo esattamente 32 pixel. Questo permette di modificare i valori di <strong>zoom</strong> a piacimento.
+        </p>
+        <p>
+            I comandi <strong>Offset X e Offset Y</strong> permettono di agire sulla <strong>posizione del centro del rettangolo</strong> nella riproiezione, e di conseguenza 
+            operare una traslazione su tutta l'immagine riproiettata. Con entrambi i valori uguali a zero il centro verrà posizionato al <strong>centro
+                dell'immagine</strong>.
+            </p>
+            <p>
+                Aumentando il valore di <strong>Offset X</strong> il centro del rettangolo si sposterà a <strong>destra</strong> di un numero di pixel pari al valore fornito, con valori negativi si sposterà a <strong>sinistra</strong>.
+                Aumentando il valore di <strong>Offset Y</strong> il centro del rettangolo si sposterà verso il <strong>basso</strong>, con valori negativi si sposterà verso <strong>l'alto</strong>.
+            </p>
+        </div>
+        <footer>
+            <p>Creato da <a href="mailto:giovanni.cocco3@studenti.unimi.it">Giovanni Cocco</a></p>
+        </footer>
+    </body>
+    </html>
